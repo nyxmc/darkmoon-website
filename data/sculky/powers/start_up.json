@@ -1,0 +1,62 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "sound": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "playsound minecraft:entity.warden.sonic_charge player @a[distance=..60] ~ ~ ~ 3.75 1"
+        },
+        "cooldown": 100,
+        "key": {
+            "key": "secondary",
+            "continuous": true
+        }
+    },
+    "start": {
+        "condition": {
+            "type": "origins:power",
+            "power": "deepian:shriek",
+            "source": "sculky:deepian"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:delay",
+            "action": {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:sonic_boom",
+                "count": 10,
+                "force": true,
+                "spread": {
+                    "x": 0.1,
+                    "y": 0.1,
+                    "z": 0.1
+                }
+            },
+            "ticks": 100
+        },
+        "cooldown": 100,
+        "key": {
+            "key": "secondary",
+            "continuous": true
+        }
+    },
+    "slow": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "slowness",
+                "duration": 40,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "cooldown": 100,
+        "key": {
+            "key": "secondary",
+            "continuous": true
+        }
+    }
+}

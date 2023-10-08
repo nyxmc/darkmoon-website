@@ -1,0 +1,19 @@
+{
+    "hidden": true,
+    "condition": {
+        "inverted": true,
+        "type": "origins:status_effect",
+        "effect": "minecraft:night_vision",
+        "min_amplifier": 5,
+        "max_amplifier": 5
+    },
+    "type": "origins:prevent_entity_render",
+    "entity_condition": {
+        "type": "origins:living"
+    },
+    "bientity_condition": {
+        "type": "origins:distance",
+        "comparison": ">",
+        "compare_to": 3
+    }
+}

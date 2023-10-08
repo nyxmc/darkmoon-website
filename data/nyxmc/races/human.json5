@@ -1,0 +1,17 @@
+{
+  name: "Human",
+  description: "An ordinary human being. Well-versed in the ways of the world and capable of learning both magic and technological skills. Has no special abilities nor drawbacks",
+  max_weight: 10,
+  min_weight: -10,
+  // /static for files in the static folder needs to be omitted
+  skin_urls: [
+    "/human/1.png",
+    "/human/2.png",
+    "/human/3.png",
+    "/human/4.png",
+    "/human/5.png",
+    "/human/6.png",
+    "/human/7.png",
+  ],
+  powers: []
+}

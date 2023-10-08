@@ -1,0 +1,203 @@
+{
+    "name": "Sculk Touch",
+    "description": "You can harvest sculk with your bare hands ",
+    "type": "origins:multiple",
+    "sculk2": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~0.5 ~ {Item:{id:\"minecraft:sculk_sensor\",Count:1}}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:sculk_sensor"
+        },
+        "only_when_harvested": false
+    },
+    "sculk3": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~0.5 ~ {Item:{id:\"minecraft:sculk_catalyst\",Count:1}}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:sculk_catalyst"
+        },
+        "only_when_harvested": false
+    },
+    "sculk4": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~0.5 ~ {Item:{id:\"minecraft:sculk_shrieker\",Count:1}}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:sculk_shrieker"
+        },
+        "only_when_harvested": false
+    },
+    "sculk6": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~0.5 ~ {Item:{id:\"minecraft:sculk\",Count:1}}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:sculk"
+        },
+        "only_when_harvested": false
+    },
+    "sculk7": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~0.5 ~ {Item:{id:\"deeperdarker:gloom_sculk\",Count:1}}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "deeperdarker:gloom_sculk"
+        },
+        "only_when_harvested": false
+    },
+    "sculk8": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~0.5 ~ {Item:{id:\"minecraft:sculk_vein\",Count:1}}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:sculk_vein"
+        },
+        "only_when_harvested": false
+    },
+    "sculk9": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~0.5 ~ {Item:{id:\"deeperdarker:sculk_gleam\",Count:1}}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "deeperdarker:sculk_gleam"
+        },
+        "only_when_harvested": false
+    },
+    "sculk10": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~0.5 ~ {Item:{id:\"deeperdarker:infested_sculk\",Count:1}}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "deeperdarker:infested_sculk"
+        },
+        "only_when_harvested": false
+    },
+    "sculk11": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:item ~ ~0.5 ~ {Item:{id:\"deeperdarker:sculk_jaw\",Count:1}}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "deeperdarker:sculk_jaw"
+        },
+        "only_when_harvested": false
+    }
+}

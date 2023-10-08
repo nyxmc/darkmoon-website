@@ -1,0 +1,8 @@
+{
+    "name": "Home",
+    "description": "You spawn in The Other Side",
+    "type": "origins:modify_player_spawn",
+    "dimension": "deeperdarker:otherside",
+    "spawn_strategy": "default",
+    "dimension_distance_multiplier": 1
+}

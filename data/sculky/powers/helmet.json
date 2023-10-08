@@ -1,0 +1,57 @@
+{
+    "name": "Armor",
+    "description": "You have been born with natural armor known as what they call the Warden’s Helmet, but you can’t take it off because it’s infused with your head, and can’t wear other helmets because of your horns",
+    "type": "origins:multiple",
+    "yey": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:give",
+            "stack": {
+                "item": "deeperdarker:warden_helmet",
+                "amount": 1,
+                "tag": "{display:{Lore:[\"\\\"Your head has beautiful tendrils\\\"\"]},Enchantments:[{id:binding_curse,lvl:1},{id:unbreaking,lvl:255},{id:vanishing_curse,lvl:1},{id:mending,lvl:1},{id:protection,lvl:4}]}"
+            },
+            "preferred_slot": "head"
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "execute run clear @s deeperdarker:warden_helmet",
+            "permission_level": "4"
+        },
+        "entity_action_respawned": {
+            "type": "origins:give",
+            "stack": {
+                "item": "deeperdarker:warden_helmet",
+                "amount": 1,
+                "tag": "{display:{Lore:[\"\\\"Your head has beautiful tendrils\\\"\"]},Enchantments:[{id:binding_curse,lvl:1},{id:unbreaking,lvl:255},{id:vanishing_curse,lvl:1},{id:mending,lvl:1},{id:protection,lvl:4}]}"
+            },
+            "preferred_slot": "head"
+        }
+    },
+    "die": {
+        "condition": {
+            "type": "origins:health",
+            "comparison": "<",
+            "compare_to": 1
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute run clear @s deeperdarker:warden_helmet",
+            "permission_level": 4
+        }
+    },
+    "other": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:drop_inventory",
+            "inventory_type": "inventory",
+            "slots": [],
+            "slot": "armor.head",
+            "retain_ownership": true
+        },
+        "execute_chosen_when_orb": true
+    }
+}

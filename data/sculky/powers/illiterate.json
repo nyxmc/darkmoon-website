@@ -1,0 +1,44 @@
+{
+    "name": "Illiterate",
+    "description": "You can’t read because you are blind, so no enchantmenting :(",
+    "type": "origins:multiple",
+    "enchant": {
+        "type": "origins:prevent_block_use",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:enchanting_table"
+        }
+    },
+    "books": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:book"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:written_book"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:writable_book"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:writable_book"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  name: "Merling",
+  description: "These natural inhabitants of the ocean are not used to being out of the water for too long. They are very intelligent and have a strong connection to all living things, granting them an advantage in botanic magic. However, they cannot breathe on land and technology and water don't mix, so they do not have access to more advanced tech.",
+  max_weight: 10,
+  min_weight: -20,
+  // /static for files in the static folder needs to be omitted
+  skin_urls: [
+    "/merling/1.png",
+    "/merling/2.png",
+  ],
+  powers: [
+    "origins:water_breathing",
+    "origins:water_vision",
+    "origins:aqua_affinity",
+    "origins:swim_speed",
+    "origins:like_water",
+    "origins:aquatic",
+    "origins:conduit_power_on_land",
+    "origins:air_from_potions"
+  ]
+}

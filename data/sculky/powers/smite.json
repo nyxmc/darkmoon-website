@@ -1,0 +1,48 @@
+{
+    "name": "Weakness",
+    "description": "You are affected by sculk smite",
+    "type": "origins:multiple",
+    "skulk": {
+        "type": "origins:modify_damage_taken",
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:enchantment",
+                    "enchantment": "deeperdarker:sculk_smite",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            }
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": 8,
+            "name": "Sculk Smite"
+        }
+    },
+    "water": {
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:water_breathing",
+                "duration": 20,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "falling_action": {
+            "type": "origins:clear_effect",
+            "effect": "minecraft:water_breathing"
+        }
+    }
+}

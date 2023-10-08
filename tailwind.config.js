@@ -12,11 +12,11 @@ export default {
         themes: [
             {
                 darkmoon: {
-                    "primary": "#55017e",
-                    "secondary": "#240335",
-                    "accent": "#691ba1",
+                    "primary": "rgb(57, 53, 72)",
+                    "secondary": "rgb(44, 38, 55)",
+                    "accent": "#55017e",
                     "neutral": "#fcfcfd",
-                    "base-100": "#0d0920",
+                    "base-100": "rgb(33, 27, 36)",
                     "info": "#054a6c",
                     "success": "#098a60",
                     "warning": "#b48618",

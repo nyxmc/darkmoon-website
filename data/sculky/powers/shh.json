@@ -1,0 +1,112 @@
+{
+    "1": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:step"
+    },
+    "2": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:swim"
+    },
+    "3": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:elytra_glide"
+    },
+    "4": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:hit_ground"
+    },
+    "5": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:block_change"
+    },
+    "6": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:splash"
+    },
+    "7": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:drink"
+    },
+    "8": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:entity_interact"
+    },
+    "9": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:eat"
+    },
+    "10": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:entity_damage"
+    },
+    "11": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:equip"
+    },
+    "12": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:shear"
+    },
+    "13": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:block_close"
+    },
+    "14": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:block_deactivate"
+    },
+    "15": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:block_detach"
+    },
+    "16": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:block_open"
+    },
+    "17": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:activate"
+    },
+    "18": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:attach"
+    },
+    "19": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:block_place"
+    },
+    "20": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:entity_place"
+    },
+    "21": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:fluid_place"
+    },
+    "22": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:block_destroy"
+    },
+    "23": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:entity_die"
+    },
+    "24": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:fluid_pickup"
+    },
+    "25": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:item_interact_finish"
+    },
+    "26": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:container_close"
+    },
+    "27": {
+        "type": "origins:prevent_game_event",
+        "event": "minecraft:container_open"
+    },
+    "hidden": true,
+    "type": "origins:multiple"
+}

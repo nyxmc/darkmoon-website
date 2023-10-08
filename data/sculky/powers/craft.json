@@ -1,0 +1,56 @@
+{
+    "name": "Reinforced Crafting",
+    "description": "Reinforced deepslate is craft-able",
+    "type": "origins:multiple",
+    "l0": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:pharaoh/orbcrafting",
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+                " x ",
+                "x0x",
+                " x "
+            ],
+            "key": {
+                "0": {
+                    "item": "minecraft:amethyst_shard"
+                },
+                "x": {
+                    "item": "minecraft:sculk"
+                }
+            },
+            "result": {
+                "item": "minecraft:echo_shard",
+                "count": 1
+            }
+        }
+    },
+    "l1": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:pharaoh/orbcrafting",
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+                "/x/",
+                "x0x",
+                "/x/"
+            ],
+            "key": {
+                "0": {
+                    "item": "minecraft:sculk_catalyst"
+                },
+                "x": {
+                    "item": "minecraft:deepslate"
+                },
+                "/": {
+                    "item": "minecraft:echo_shard"
+                }
+            },
+            "result": {
+                "item": "minecraft:reinforced_deepslate",
+                "count": 1
+            }
+        }
+    }
+}

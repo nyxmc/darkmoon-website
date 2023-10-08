@@ -1,0 +1,41 @@
+{
+    "name": "Deepian",
+    "description": "Sentient sculk creature that Originated from the Other Side\n",
+    "powers": [
+        "sculky:blind",
+        "sculky:craft",
+        "sculky:eat",
+        "sculky:exhausted",
+        "sculky:glow",
+        "sculky:haste",
+        "sculky:helmet",
+        "sculky:homey",
+        "sculky:illiterate",
+        "sculky:run",
+        "sculky:sculk_buds",
+        "sculky:sharp",
+        "sculky:shh",
+        "sculky:shriek",
+        "sculky:spread",
+        "sculky:start_up",
+        "sculky:swim",
+        "sculky:smite",
+        "sculky:immune",
+        "sculky:dim",
+        "sculky:sounds",
+        "sculky:fall",
+        "sculky:over",
+        "sculky:nether",
+        "sculky:end",
+        "sculky:any",
+        "sculky:nv",
+        "sculky:silk",
+        "sculky:no_xp"
+    ],
+    "icon": {
+        "item": "deeperdarker:sculk_jaw",
+        "amount": 1
+    },
+    "order": 5,
+    "impact": 3
+}

@@ -1,0 +1,95 @@
+{
+    "name": "No Eyes",
+    "description": "You can’t see because, well, you’re blind. You can only sense things sensed by sculk sensors",
+    "type": "origins:multiple",
+    "rendering": {
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/sobel.json",
+        "toggleable": false
+    },
+    "invis": {
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:night_vision",
+            "min_amplifier": 5,
+            "max_amplifier": 5
+        },
+        "type": "origins:prevent_entity_render",
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:distance",
+            "comparison": ">",
+            "compare_to": 16
+        }
+    },
+    "nivi": {
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:block",
+                "block": "minecraft:sculk_sensor"
+            },
+            "radius": 16,
+            "shape": "cube",
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:night_vision",
+                "duration": 100,
+                "amplifier": 5,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:clear_effect",
+                    "effect": "minecraft:night_vision"
+                }
+            ]
+        }
+    },
+    "l3": {
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:night_vision",
+            "min_amplifier": 5,
+            "max_amplifier": 5
+        },
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 0,
+        "green": 0.5,
+        "blue": 0.5
+    }
+}

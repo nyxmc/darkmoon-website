@@ -1,0 +1,34 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:block_in_radius",
+                "block_condition": {
+                    "type": "origins:in_tag",
+                    "tag": "sculky:swimming"
+                },
+                "radius": 3,
+                "shape": "cube",
+                "comparison": ">=",
+                "compare_to": 1
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:air"
+                    }
+                }
+            }
+        ]
+    },
+    "type": "origins:modify_xp_gain",
+    "modifier": {
+        "operation": "set_base",
+        "value": 0
+    }
+}

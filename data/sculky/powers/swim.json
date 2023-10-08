@@ -1,0 +1,75 @@
+{
+    "name": "Sculk Maneuver",
+    "description": "You can swim through any sculk block with ease",
+    "type": "origins:multiple",
+    "phase": {
+        "type": "origins:phasing",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "sculky:swimming"
+                },
+                {
+                    "type": "origins:material",
+                    "material": "sculk"
+                }
+            ]
+        },
+        "render_type": "none",
+        "view_distance": 10
+    },
+    "swim": {
+        "condition": {
+            "type": "origins:in_block",
+            "block_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "sculky:swimming"
+                    },
+                    {
+                        "type": "origins:material",
+                        "material": "sculk"
+                    }
+                ]
+            }
+        },
+        "type": "origins:swimming"
+    },
+    "particles": {
+        "condition": {
+            "type": "origins:in_block",
+            "block_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "sculky:swimming"
+                    },
+                    {
+                        "type": "origins:material",
+                        "material": "sculk"
+                    }
+                ]
+            }
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @s run particle minecraft:sculk_charge_pop ~ ~ ~ 0.3 0.6 0.3 0.04 45 force"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:block.sculk.spread player @a[distance=..5] ~ ~ ~ 0.3 1"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "name": "Sharp claws",
+    "description": "Being in a cave dimension and digging all your life, your bony sharp claws are strong and sharp enough to break stone by its self",
+    "type": "origins:multiple",
+    "sharp": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "add_base_early",
+            "value": 11,
+            "name": "Sharp claws"
+        }
+    },
+    "not": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "addition",
+            "value": 7,
+            "name": "Sharp claws"
+        }
+    }
+}

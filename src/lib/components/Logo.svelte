@@ -1,9 +1,9 @@
 <script>
-    import logo from "$lib/assets/darkmoon.jpg";
+    export let width = "w-5";
 </script>
 
 <img
-        class="mask mask-hexagon-2 w-24 justify-self-center"
-        src={logo}
+        class="mask mask-squircle justify-self-center {width}"
+        src="/logo.png"
         alt="Logo"
 >

@@ -1,0 +1,61 @@
+{
+    "name": "Sculk Buds",
+    "description": "All sculk based mobs are passive to you, Sculk sensors will not detect you either (did not make the ignore_sensors bc im lazy and did not want to code in everything, this was made by JBG#3505)\n",
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team add sculkers"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join sculkers @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join sculkers @e[type=minecraft:warden]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join sculkers @e[type=deeperdarker:sculk_centipede"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join sculkers @e[type=deeperdarker:sculk_leech]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join sculkers @e[type=deeperdarker:sculk_snapper]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join sculkers @e[type=deeperdarker:shattered]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join sculkers @e[type=deeperdarker:shriek_worm]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join sculkers @e[type=deeperdarker:stalker]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join sculkers @e[type=minecraft:phantom]"
+            }
+        ]
+    }
+}

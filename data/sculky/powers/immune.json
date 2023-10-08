@@ -1,0 +1,63 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "l0": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:entity_type",
+                                "entity_type": "deeperdarker:sculk_snapper"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:in_block_anywhere",
+                        "block_condition": {
+                            "type": "origins:block",
+                            "block": "deeperdarker:sculk_jaw"
+                        },
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    {
+                        "type": "origins:on_block",
+                        "block_condition": {
+                            "type": "origins:material",
+                            "material": "sculk"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "l1": {
+        "type": "origins:fire_immunity"
+    },
+    "l2": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "drown"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "inWall"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "ring"
+                }
+            ]
+        }
+    }
+}

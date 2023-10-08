@@ -1,0 +1,9 @@
+{
+    "name": "Quick Digestion",
+    "description": "You exhaust faster because of your dumb-looking digestion system",
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1.5
+    }
+}

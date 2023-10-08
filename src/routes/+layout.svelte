@@ -1,6 +1,6 @@
 <script>
     import "../app.css";
-    import Footer from "$lib/components/Footer.svelte";
+    import Footer from "$lib/components/page/Footer.svelte";
 </script>
 
 <div class="card">
